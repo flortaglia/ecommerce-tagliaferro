@@ -1,0 +1,38 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Hahmlet', serif;
+    font-size: 62.5%;      
+    color: black;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style-type: none;
+} 
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; //no lo tomaba asi que lo agregue nuevamente  
+    
+}
+
+/*Mixins*/
+
+@mixin grid($cols,$rows,$gap) {
+    display: grid;
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;  
+    gap: $gap;
+    
+} 
+
+@mixin dimensiones ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
